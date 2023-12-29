@@ -13,7 +13,7 @@ classes = {0:'background',1:'aeroplane',2:'bicycle',3:'bird'
 #Load model
 net = cv.dnn.readNetFromCaffe(prototxt, model)
 #--------- Read images ---------- #
-image = cv.imread("imgs/gatos-y-perros.jpg")
+image = cv.imread("imgs/pajaro-en-ramita.jpg")
 height, width, _ = image.shape
 image_resized = cv.resize(image,(300,300))
 #Create blob
