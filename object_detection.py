@@ -9,11 +9,11 @@ classes = {0:'background',1:'aeroplane',2:'bicycle',3:'bird'
            ,4:'boat',5:'bottle',6:'bus',7:'car',8:'cat',9:'chair'
            ,10:'cow',11:'dinigtable',12:'dog',13:'horse',14:'motorbike',
            15:'person',16:'phone',17:'plant',18:'sheep'
-           ,19:'sofa',20:'train',21:'truck'}
+           ,19:'sofa',20:'train',21:'truck',23:'Rat'}
 #Load model
 net = cv.dnn.readNetFromCaffe(prototxt, model)
 #--------- Read images ---------- #
-image = cv.imread("imgs/gatos-y-perros.jpg")
+image = cv.imread("imgs/rata.jpg")
 height, width, _ = image.shape
 image_resized = cv.resize(image,(300,300))
 #Create blob
